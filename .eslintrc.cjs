@@ -23,5 +23,6 @@ module.exports = {
       { allowConstantExport: true },
     ],
     'react/jsx-one-expression-per-line': [0],
+    'import/no-extraneous-dependencies': 'off',
   },
 };
