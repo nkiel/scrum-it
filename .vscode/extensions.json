@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.js-debug",
+    "streetsidesoftware.code-spell-checker",
+    "dsznajder.es7-react-js-snippets",
+    "esbenp.prettier-vscode"
+  ]
+}

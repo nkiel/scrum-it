@@ -6,8 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "test": "",
+    "format": "prettier . -w",
+    "format-check": "prettier . -c",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "fixme": "eslint . --fix --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "pr-check": "set CI= && pnpm run format-check && pnpm run lint && pnpm run test"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -20,9 +25,13 @@
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react": "^4.0.3",
     "eslint": "^8.45.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "prettier": "^3.0.3",
     "typescript": "^5.0.2",
+    "vite-plugin-eslint": "^1.8.1",
     "vite": "^4.4.5"
   }
 }
